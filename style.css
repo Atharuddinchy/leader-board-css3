@@ -1,0 +1,173 @@
+/* top font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* commn style */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: grey;
+
+}
+
+
+
+/* style top players */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-title {
+    color: darkcyan;
+    font-size: 24px;
+    margin-top: 3px;
+}
+
+.container {
+    background-color: white;
+    width: 870px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+
+.player-name {
+    padding: 16px;
+    font-size: 18px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.player {
+    display: flex;
+    align-items: center;
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+hr {
+    border: 1px solid gainsboro;
+    margin-bottom: 27px;
+}
+
+/* Blog section style */
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+}
+
+.blog {
+    display: flex;
+}
+
+.top-blog .thumblnail img {
+    width: 177px;
+    height: 117px;
+}
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-name {
+    font-size: 20px;
+}
+
+.blog-author {
+    color: lightslategray;
+    font-size: 16px;
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: blueviolet;
+
+}
+
+/* Course style  */
+.course {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.under-course {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.course img {
+    width: 224px;
+    height: 104px;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.fa-star.fild {
+    color: goldenrod;
+
+}
+
+.fa-star.empty {
+    color: silver;
+}
+
+.course-duration {
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    background-color: palevioletred;
+}
+
+.course-detail {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Media Quarey------mobile devices------ */
+
+@media only screen and (max-width:688px) {
+    .container {
+        width: 100%;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+
+    .blogs,
+    .course {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+    }
+}
+
+/* Media Quarey for tab or ipad  */
+@media only screen and (min-width:689px) and (max-width:991px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .course {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* this is my first websit */
